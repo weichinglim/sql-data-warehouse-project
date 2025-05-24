@@ -13,6 +13,7 @@ WARNING:
     and ensure you have proper backups before running this script.
 */
 
+/* NOTE: For SQL Server. For PostgreSQL view code below.
 USE master;
 GO
 
@@ -30,13 +31,12 @@ GO
 
 USE DataWarehouse;
 GO
+*/
 
+-- For PostgreSQL, used PgAdmin4 to create database instead of running script. Then create schema below
 -- Create Schemas
 CREATE SCHEMA bronze;
-GO
 
 CREATE SCHEMA silver;
-GO
 
 CREATE SCHEMA gold;
-GO
