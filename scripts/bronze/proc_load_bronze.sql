@@ -21,7 +21,7 @@ Usage Example:
 
 CREATE OR REPLACE PROCEDURE bronze.load_bronze()
 LANGUAGE plpgsql
-As $$
+AS $$
 DECLARE 
 	start_time TIMESTAMP;
 	end_time TIMESTAMP;
