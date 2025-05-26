@@ -27,6 +27,8 @@ DECLARE
 	end_time TIMESTAMP;
 	batch_start_time TIMESTAMP;
 	batch_end_time TIMESTAMP;
+	error_text TEXT;
+	error_code TEXT;
 BEGIN
 	batch_start_time := CLOCK_TIMESTAMP();
 	RAISE NOTICE '====================================================';
@@ -122,13 +124,15 @@ BEGIN
 	batch_end_time := CLOCK_TIMESTAMP();
 	RAISE NOTICE '====================================================';
 	RAISE NOTICE 'Loading Bronze Layer is Completed';
-	RAISE NOTICE 'Error Message: %', SQLERRM;
+	RAISE NOTICE 'Total Load Duration: % seconds', EXTRACT(EPOCH FROM batch_end_time - batch_start_time);
 	RAISE NOTICE '====================================================';
 EXCEPTION
 	WHEN OTHERS THEN 
+	GET STACKED DIAGNOSTICS error_text = MESSAGE_TEXT, error_code = RETURNED_SQLSTATE;
 		RAISE NOTICE '====================================================';
 		RAISE NOTICE 'ERROR OCCURED DURING LOADING BRONZE LAYER';
-		RAISE NOTICE ' - Total Load Duration: % seconds', EXTRACT(EPOCH FROM batch_end_time - batch_start_time);
+		RAISE NOTICE 'Error Message: %', error_text;
+		RAISE NOTICE 'Error Code: %', error_code;
 		RAISE NOTICE '====================================================';
 END;
 $$;
