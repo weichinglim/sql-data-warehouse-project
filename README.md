@@ -8,7 +8,7 @@ I created this data warehouse using queries compatible with PostgreSQL and pgAdm
 
 ## Acknowledgements
 Credits: [Data with Baraa](https://www.youtube.com/watch?v=9GVqKuTVANE)    
-Website and Sources: [SQL Data Warehouse Project](https://www.datawithbaraa.com/sql-introduction/advanced-sql-project/)
+Project Materials Source: [SQL Data Warehouse Project](https://www.datawithbaraa.com/sql-introduction/advanced-sql-project/)
 
 ---
 ## 🏗️ Data Architecture
