@@ -1,8 +1,12 @@
 # sql-data-warehouse-project
-Building a modern data warehouse with SQL Server, including ETL processes, data modeling and analytics.
+Building a modern data warehouse with **PostgreSQL**, including ETL processes, data modeling and analytics.
 
 Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+
+## Acknowledgements
+Credits: [Data with Baraa](https://www.youtube.com/watch?v=9GVqKuTVANE)    
+Website and Sources: [SQL Data Warehouse Project](https://www.datawithbaraa.com/sql-introduction/advanced-sql-project/)
 
 ---
 ## 🏗️ Data Architecture
@@ -58,4 +62,4 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 ## 🌟 About Me
 
-Hi there! I'm **Wei Ching Lim**, a graduate with a dual background in Business Analytics and Computer Science. I'm passionate about turning data into actionable insights, building smart solutions, and exploring how technology can solve real-world problems. Whether it's uncovering trends, optimizing performance, or building data-driven products, I love combining analytical thinking with technical skills to make an impact.
+Hello! I'm **Wei Ching Lim**, a graduate with a dual background in Business Analytics and Computer Science. I'm passionate about transforming data into actionable insights, creating effective solutions using data, and leveraging technology to address challenges in the real world. My projects focuses on uncovering trends, enhancing performances, and developing innovative tools powered by data. I combine analytical insights with technical skills to generate impactful and data-driven solutions.
